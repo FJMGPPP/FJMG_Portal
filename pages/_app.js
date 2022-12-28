@@ -1,7 +1,21 @@
 import '@styles/globals.css'
+import {MantineProvider} from "@mantine/core"
+import { ApplicationContainer } from '@components/ApplicationContainer'
 
-function Application({ Component, pageProps }) {
-  return <Component {...pageProps} />
+function MyApp({ Component, pageProps }) {
+  return(
+    <MantineProvider
+      withGlobalStyles
+      withNormalizeCSS
+      theme={{
+        colorScheme: "light" , 
+        primaryColor : "blue"
+        
+        }}>
+        <ApplicationContainer>
+          <Component {...pageProps}/>
+        </ApplicationContainer>
+      </MantineProvider>
+  )
 }
-
-export default Application
+export default MyApp
