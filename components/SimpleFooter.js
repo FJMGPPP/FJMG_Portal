@@ -1,8 +1,9 @@
-import { createStyles, Container, Group, Anchor } from '@mantine/core';
+import { createStyles, Container, Group} from '@mantine/core';
 import { useState } from 'react';
+import { Footer} from '@mantine/core';
 const useStyles = createStyles((theme) => ({
   footer: {
-    marginTop: 120,
+    marginTop: "10vh",
     borderTop: `1px solid ${
       theme.colorScheme === 'dark' ? theme.colors.dark[5] : theme.colors.gray[2]
     }`,
@@ -55,7 +56,7 @@ const useStyles = createStyles((theme) => ({
 }));
 
 
-export default function Footer({ links }) {
+export default function SimpleFooter({ links }) {
   const { classes, cx } = useStyles();
   const [active, setActive] = useState(links[0].link);
   const items = links.map((link) => (
@@ -73,11 +74,11 @@ export default function Footer({ links }) {
   ));
 
   return (
-    <div className={classes.footer}>
+    <Footer className={classes.footer}>
       <Container className={classes.inner}>
         <Group size={28}/>
         <Group className={classes.links}>{items}</Group>
       </Container>
-    </div>
+    </Footer>
   );
 }

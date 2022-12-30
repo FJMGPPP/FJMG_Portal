@@ -3,6 +3,7 @@ import { Card, Image, Text, Group, Badge, Button, ActionIcon, createStyles } fro
 
 const useStyles = createStyles((theme) => ({
   card: {
+    margin:"1vh",
     backgroundColor: theme.colorScheme === 'dark' ? theme.colors.dark[7] : theme.white,
     display:"block"
   },
@@ -31,7 +32,8 @@ const useStyles = createStyles((theme) => ({
 
 export function Proyect({ image, title, description, country, badges }) {
   const { classes, theme } = useStyles();
-
+  const features = <p>Buenos dias</p>
+/*
   const features = badges.map((badge) => (
     <Badge
       color={theme.colorScheme === 'dark' ? 'dark' : 'gray'}
@@ -41,7 +43,7 @@ export function Proyect({ image, title, description, country, badges }) {
       {badge.label}
     </Badge>
   ));
-
+*/
   return (
     <Card withBorder radius="md" p="md" className={classes.card}>
       <Card.Section>
