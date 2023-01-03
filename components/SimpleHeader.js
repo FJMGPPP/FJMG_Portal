@@ -69,9 +69,9 @@ export default function SimpleHeader({links}) {
   return (
     <Header height={60} mb={120}>
       <Container className={classes.header}>
-        <Image width={60}
-        height={50}
-        src="/netliheart.svg"  />
+        <Image width={70}
+        height={70}
+        src="/logo.png"  />
         <Group spacing={5} className={classes.links}>
           {items}
         </Group>

@@ -50,7 +50,7 @@ const useStyles = createStyles((theme) => ({
 
   linkActive: {
     '&, &:hover': {
-      color: theme.colors.gray[9]
+      color: theme.colorScheme === 'dark' ? theme.colors.blue[9] : theme.colors.dark[6],
     },
   },
 }));
