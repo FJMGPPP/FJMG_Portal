@@ -10,7 +10,7 @@ const useStyles = createStyles((theme) => ({
     body: {
         width: "100%",
         height: "90vh",
-        backgroundColor : theme.colorScheme === 'dark' ? theme.colors.dark[6] : "#ffffff"
+        backgroundColor : theme.colorScheme === 'dark' ? theme.colors.dark[7] : "#ffffff"
     },
   }));
 

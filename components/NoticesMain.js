@@ -109,7 +109,7 @@ export default function NoticesMain()
     if(loading == LoadingStates.blank){
         return(
             <Grid justify="center">
-                
+                <h1>Bienvenidos!</h1>
             </Grid>
         )
     }

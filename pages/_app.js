@@ -8,7 +8,7 @@ function MyApp({ Component, pageProps }) {
         withGlobalStyles
         withNormalizeCSS
         theme={{
-          colorScheme: "light" , 
+          colorScheme: "dark" , 
           primaryColor : "blue"
           
           }}>
