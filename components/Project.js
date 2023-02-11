@@ -1,5 +1,5 @@
 import { IconHeart } from '@tabler/icons';
-import { Card, Image, Text, Group, Badge, Button, ActionIcon, createStyles } from '@mantine/core';
+import { Card, Image, Text, Group, Badge, Button, ActionIcon, createStyles, Progress } from '@mantine/core';
 
 const useStyles = createStyles((theme) => ({
   card: {
@@ -36,7 +36,7 @@ export function Proyect({ image, title, description, type, progress }) {
   return (
     <Card withBorder radius="md" p="md" className={classes.card}>
       <Card.Section>
-        <Image src={image} alt={title} height={180} />
+        <Image src={image} alt={title} height={180}  fit="contain"/>
       </Card.Section>
 
       <Card.Section className={classes.section} mt="md">
@@ -49,6 +49,7 @@ export function Proyect({ image, title, description, type, progress }) {
         <Text size="sm" mt="xs">
           {description}
         </Text>
+        <Progress value={progress} title="progress"/>
       </Card.Section>
 
       <Group mt="xs">
